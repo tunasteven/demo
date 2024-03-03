@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蜘蛛人咖啡</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <header class="clearfix">
+        <h1 class="float-left">
+            <a href="./index.html">蜘蛛人咖啡</a>
+        </h1>
+        <nav class="float-left">
+
+            <ul class="clearfix">
+                <li class="float-left"><a href="about.html">關於我們</a></li>
+                <li class="float-left"><a href="product.html">產品列表</a></li>
+                <li class="float-left"><a href="store.html">門市資訊</a></li>
+                <li class="float-left"><a href="contact.html">聯絡我們</a></li>
+                
+            </ul>
+        </nav>
+        <div class="social-icon float-left">
+            <a href="#"><i class="fa-brands fa-facebook icon-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram icon-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-line icon-line"></i></a>
+            
+        </div>
+</header>
+<div class="bg-light">
+    <div class="container">
+        <ol class="breadcrumb clearfix">
+            <li class="float-left"><a href="index.html">首頁</a></li>
+            <li class="float-left">聯絡我們</li>
+        </ol>
+    </div>
+</div>
+<!-- .container.clearfix>.float-left.col-3{左}+.float-left.col-9{右} -->
+<div class="bg-texture">
+<div class="container clearfix ">
+    <h2 class="float-left col-12">聯絡我們</h2>
+    <div class="float-left col-3 position-sticky">
+        <!-- ul.sidebar>li*3>a[href="#"]{item$} -->
+        <ul class="sidebar">
+            <li><a class="active" href="#">聯絡表單</a></li>
+            <li><a href="#">總店資訊</a></li>
+        </ul>
+    </div>
+    <div class="float-left col-6">
+        <!-- 表單 start -->
+            <form action="#" method="post" enctype="multipart/form-data">  
+                <!-- 姓名start -->
+                <label for="name">姓名*</label>
+                <input type="text" name="name" id="name" placeholder="請輸入姓名" required>
+                <br>
+                <br>
+                <!-- 姓名end -->
+
+                <!-- 電話start -->
+                <label for="phone">電話*</label>
+                <input type="text" name="phone" id="phone" placeholder="請輸入電話" required>
+                <br>
+                <br>               
+                <!-- 電話end -->
+
+                <!-- Email  start -->
+                <label for="email">Email*</label>
+                <input type="email" name="email" id="email" placeholder="請輸入電子郵件" required>
+                <br> 
+                <br>               
+                <!-- Email  end -->
+
+                <!-- 消費日期  start -->
+                <label for="date">消費日期</label>
+                <input type="date" name="date" id="date">
+                <br>
+                <br>                
+                <!-- 消費日期  end -->
+
+                <!-- 聯絡目的 start -->
+                <label for="purpose">聯絡目的</label>
+                <select name="purpose" id="purpose">
+                    <option disable selected="true">----請選擇項目----</option>
+                    <option value="">客服專區</option>
+                    <option value="">海外代理</option>
+                    <option value="">加盟專區</option>
+                    <option value="">異業合作</option>
+                    <option value="">企業採購</option>
+                    <option value="">聯名商品</option>
+                </select>
+                <br>
+                <br>
+                <!-- 聯絡目的 end -->
+
+                <!-- radio start 單核選 -->
+                <label for="gender">稱謂</label>
+                <input type="radio" name="gender" id="male" value="男" checked><label for="male">先生</label>
+                <input type="radio" name="gender" id="female" value="女"><label for="female">小姐</label>
+                <br>
+                <br>
+                <!-- radio start -->
+
+                <!-- checkbox start 多核選-->
+                <label for="interest">對那些項目有興趣</label>
+                <input class="mb-2" type="checkbox" name="interest[]" id="art"><label for="art">藝術</label>
+                <input type="checkbox" name="interest[]" id="sport"><label for="sport">運動</label>
+                <input type="checkbox" name="interest[]" id="program"><label for="program">程式</label>
+                <br>
+                <br>
+                <!-- checkbox end -->
+
+                <!-- file start -->
+                <label for="file">上傳附件</label>
+                <input type="file" name="file" id="file">
+                <br>
+                <br>
+                <!-- file end -->
+
+                <!-- 內容 -->
+                
+                <label for="massage">內容</label>
+                <textarea name="massage" id="massage" cols="30" rows="15" placeholder="請輸入內容"></textarea>
+                <br>
+                <br>
+
+                <!-- checkbox start 多核選-->
+                
+                <input type="checkbox" name="newsletter" id="newsletter"><label for="newsletter">您是否同意訂閱電子報</label>
+                <br>
+                <br>
+
+                <!-- checkbox end -->
+
+                <!-- value 值 -->
+                <p class="text-right">
+
+                    <input class="mb-5" type="submit" value="送出表單">
+                </p>
+             
+
+            </form>
+
+
+        <!-- 表單 end -->
+        
+    </div>
+</div>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29124.173725328303!2d120.64802053667668!3d24.153429334828328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d9af316002b%3A0x504a03e8dff4a935!2zY2FtYSBjYWbDqSDlj7DkuK3nsr7mmI7lupc!5e0!3m2!1szh-TW!2stw!4v1709261794928!5m2!1szh-TW!2stw" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+    <footer>
+        <div class="container">
+            <!---->
+            上課操作範例非商業用途<br>
+             copyright&copy; cafe. All rights reserved.
+        </div>
+    </footer>
+    <!-- 
+    <a href="#"></a><i class="fa-brands fa-facebook icon-facebook"></i>
+    <a href="#"></a><i class="fa-brands fa-instagram icon-instagram"></i>
+    <a href="#"></a><i class="fa-brands fa-line .icon-line"></i>
+    <h2>最新消息</h2>
+    <h2>熱門產品</h2> -->
+</body>
+</html>
